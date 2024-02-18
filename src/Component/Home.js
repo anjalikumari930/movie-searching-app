@@ -5,7 +5,7 @@ import Moviecard from "./moviecard";
 const Home = () => {
   const [Movie, setMovie] = useState([]);
   const [Search, setSearch] = useState("");
-  const apiurl = "http://www.omdbapi.com/?i=tt3896198&apikey=cfaa0483";
+  const apiurl = "https://www.omdbapi.com/?i=tt3896198&apikey=cfaa0483";
 
   const fetchMovie = async (title) => {
     try {
