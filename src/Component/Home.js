@@ -12,7 +12,8 @@ const Home = () => {
       const response = await axios.get(`${apiurl}&s=${title}`);
       setMovie(response.data.Search);
     } catch (error) {
-      console.error("Error fetching movies:", error);
+      console.error("Error fetching movies:", error.message);
+      // Handle error appropriately, e.g., show an error message to the user
     }
   };
 
